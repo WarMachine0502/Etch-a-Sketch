@@ -1,0 +1,78 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+    font-size: 14px;
+    background: whitesmoke;
+    overflow: hidden;
+}
+.section{
+    display:  flex;
+    background: linear-gradient(90deg, #fdd6bd, #f3e7e9, #f794a4, #dad4ec);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height:  100vh;
+}
+
+.container{
+    width: 600px;
+    height: 600px;
+    display: grid;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background: rgb(240,255,240);
+    outline: #3a2D80 solid 1px;
+    caret-color: white;
+}
+.buttons {
+    width: 600px;
+    position: absolute;
+    margin: 10em;
+    padding: 3em 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.btn{
+    padding: 0.5em 1.5em;
+    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+    margin: 1em;
+    background: transparent;
+    outline: #3a2D80 solid 1px;
+    border: none;
+    font-weight: bolder;
+    z-index: 1000;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    font-size: 1.5em;
+}
+
+.btn:hover{
+    background: black;
+    transition: .25s ease-in-out;
+    color: white;
+    box-shadow: 0px 2px 2px white;
+    transform: scale(1.05);
+    transform: translateY(-4px)
+} 
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
