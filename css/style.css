@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+}
+ 
+.grid{
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(90deg, #fdd6bd, #f3e7e9);
+	background-size: 1000% 1000%;
+	animation: gradient 5s ease infinite;
+    height: 100vh;
+}
+
+.gridbox{
+    outline: #3a2D80 solid 0.1em;
+    width: 30em;
+    height: 30em;
+    display: grid;
+    z-index: 1000;
+    background: transparent;
+}
+
+.btn{
+    background: transparent;
+    outline: #3a2D80 solid 1px;
+    border: 0.05rem solid;
+    margin: 1em;
+    padding: 0.5em 1.5em;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.btn:hover{
+    background: black;
+    transition: .25s ease-in-out;
+    color: white;
+    box-shadow: 0px 2px 2px white;
+    transform: scale(1.05);
+    transform: translateY(-4px)
+} 
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
